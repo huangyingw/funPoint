@@ -1,11 +1,8 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
-
 int test(int a);
-
-int main(int argc,char* argv[])    
-{
+int main(int argc,char* argv[])    {
   cout<<test<<endl;  
   typedef int (*fp)(int a);
   fp fpi;
@@ -16,8 +13,6 @@ int main(int argc,char* argv[])
   cout<<myp(100)<<endl;
   return 0;
 }
-
-int test(int a)
-{
+int test(int a) {
   return a;
 } 
