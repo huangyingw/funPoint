@@ -18,10 +18,10 @@ class A {
 };
 template <class T>
 void fun2(int j,T *obp,int (T::*p)(int)) {
-  cout <<(obp->*p)(j);
+  cout<<(obp->*p)(j)<<endl;
 }
 void fun2(int j,int (*p)(int)) {
-  cout<<p(j);
+  cout<<p(j)<<endl;
 }
 int fun3(int i) {
   return i;
